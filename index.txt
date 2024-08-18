@@ -1,12 +1,12 @@
 Julia - I'm User Interface Designer & Developer.
 
-This is a personal portfolio html template made by codewithsadee
+This is a personal portfolio html template made by Shivani
 
 
 
 #---------- HEADER ----------#
 
-alt = Julia home
+alt = Shivani home
 
 aria-label = close menu
 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -33,13 +33,13 @@ aria-label = open menu
 
 #---------- HERO ----------#
 
-alt = Julia
+alt = Shivani
 
-alt = 250+ Projects Done
+alt = 10+ Projects Done
 
-I'm User Interface Designer & Developer.
+I'm a Full Stack Web Developer.
 
-Hello! I'm Julia, a freelance user interface designer & developer based in London. I’m very passionate about the work that I do.
+Hello! I'm Shivani, a Full stack web developer based in Hyderabad, India. I’m very passionate about the work that I do.
 
 See My Works
 Contact Me
