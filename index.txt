@@ -1,4 +1,4 @@
-Julia - I'm User Interface Designer & Developer.
+Shivani - I'm a Full stack web developer.
 
 This is a personal portfolio html template made by Shivani
 
@@ -152,7 +152,7 @@ Send message
 
 #---------- FOOTER ----------#
 
-© 2022 codewithsadee. All rights reserved.
+© 2022 shivani. All rights reserved.
 
 <ion-icon name="logo-twitter"></ion-icon>
 <ion-icon name="logo-facebook"></ion-icon>
