@@ -6,7 +6,6 @@
 
   A fully responsive personal portfolio website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://codewithsadee.github.io/julia-portfolio/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -34,10 +33,12 @@ Windows:
 git clone https://github.com/codewithsadee/julia-portfolio.git
 ```
 
-### Contact
+## Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you have any questions or feedback, feel free to reach out:
 
-### License
+- **Email:** [toorpushivani@gmail.com](mailto:toorpushivani@gmail.com)
 
-This project is **free to use** and does not contains any license.
+## License
+
+This project is **free to use** and does not contain any license.
