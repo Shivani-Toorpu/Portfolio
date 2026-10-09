@@ -1,26 +1,45 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Wipe Tailwind's default colors so only black/white/gray exist */
+  --color-*: initial;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-page: #ffffff;
+  --color-surface: #f7f7f7;
+  --color-highlight: #e5e5e5;
+  --color-line: #d4d4d4;
+  --color-muted: #737373;
+  --color-body: #171717;
+  --color-ink: #000000;
+
+  --font-sans:
+    var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --radius-card: 1.5rem;
+  --radius-frame: 2rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-page);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+}
+
+/* Gray word highlight: only used in the hero bio and navbar */
+.hl {
+  background: var(--color-highlight);
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
 }
