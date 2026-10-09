@@ -7,7 +7,7 @@ export default function Card({
 }: ComponentProps<'div'>) {
   return (
     <div
-      className={`rounded-card border border-line bg-white p-6 ${className}`}
+      className={`rounded-card border-line border bg-white p-6 ${className}`}
       {...props}
     >
       {children}

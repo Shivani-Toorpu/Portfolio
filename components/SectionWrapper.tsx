@@ -14,7 +14,7 @@ export default function SectionWrapper({
   return (
     <section id={id} className="scroll-mt-24 px-4 py-3 sm:px-6">
       <div
-        className={`mx-auto max-w-6xl rounded-frame border border-line bg-white p-6 sm:p-10 ${className}`}
+        className={`rounded-frame border-line mx-auto max-w-6xl border bg-white p-6 sm:p-10 ${className}`}
       >
         {children}
       </div>

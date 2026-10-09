@@ -4,16 +4,16 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 
 ## Tech Stack
 
-| Concern | Choice |
-|---|---|
-| Framework | Next.js (App Router) + React + TypeScript |
-| Styling | Tailwind CSS |
-| Email | Next.js API route + Nodemailer (Gmail App Password) |
-| Toasts | `sonner` (or `react-hot-toast`) |
-| Carousel | Embla Carousel (touch-swipe + autoplay plugin) |
-| Icons | `lucide-react` + `react-icons` (tech/brand icons) |
-| Deployment | Vercel |
-| Version control | Git + GitHub |
+| Concern         | Choice                                              |
+| --------------- | --------------------------------------------------- |
+| Framework       | Next.js (App Router) + React + TypeScript           |
+| Styling         | Tailwind CSS                                        |
+| Email           | Next.js API route + Nodemailer (Gmail App Password) |
+| Toasts          | `sonner` (or `react-hot-toast`)                     |
+| Carousel        | Embla Carousel (touch-swipe + autoplay plugin)      |
+| Icons           | `lucide-react` + `react-icons` (tech/brand icons)   |
+| Deployment      | Vercel                                              |
+| Version control | Git + GitHub                                        |
 
 ## Workflow Rules
 
@@ -26,6 +26,7 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Reference:** [beminimalist.co](https://beminimalist.co/): clean, text-first, lots of whitespace, solid black call-to-action buttons, thin-bordered rounded cards, small icon + short-label feature grids, and imagery doing the talking.
 
 **Rules**
+
 1. **Palette is black, white and grays only.** No accent colors anywhere in the UI. The only color on the site comes from the images you supply (headshot, book covers, project screenshots, logos).
 2. **Grays are for effects**, not decoration: hover states, borders, dividers, shadows, card backgrounds, disabled states, skeleton/loading states, and the highlight effects below.
 3. **Word highlights use grays only, and only in two places:**
@@ -38,15 +39,15 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 
 **Gray scale tokens (Tailwind theme, defined in Phase 1)**
 
-| Token | Hex | Use |
-|---|---|---|
-| `bg` | `#FFFFFF` | Page background |
-| `surface` | `#F7F7F7` | Cards, contact panel |
+| Token       | Hex       | Use                              |
+| ----------- | --------- | -------------------------------- |
+| `bg`        | `#FFFFFF` | Page background                  |
+| `surface`   | `#F7F7F7` | Cards, contact panel             |
 | `highlight` | `#E5E5E5` | Word highlights, active nav pill |
-| `border` | `#D4D4D4` | Card borders, dividers |
-| `muted` | `#737373` | Secondary text |
-| `text` | `#171717` | Body text |
-| `ink` | `#000000` | Headings, primary buttons |
+| `border`    | `#D4D4D4` | Card borders, dividers           |
+| `muted`     | `#737373` | Secondary text                   |
+| `text`      | `#171717` | Body text                        |
+| `ink`       | `#000000` | Headings, primary buttons        |
 
 (Exact values can be tuned when we review Phase 1.)
 
@@ -54,21 +55,23 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 
 ## Wireframe Summary
 
-| Section | Key elements |
-|---|---|
-| Navigation | Sticky pill nav: HOME, ABOUT ME, SKILLS, PROJECTS, CONTACT; active link highlighted with a gray pill (wireframe yellow becomes gray); logo on the left |
-| Hero | Scrolling marquee ("actively seeking roles..."), intro headline + bio with highlighted words, buttons (View LinkedIn / GitHub / Resume), portrait on the right |
-| About Me | Card grid: Experience (Offer Letter, Certificate, GitHub), Education (Webpage + 2 placeholder buttons), Pass-time (book covers), Publication (View Paper, Certificate, GitHub), several `?` placeholder cards, quote card |
-| Skills | Large empty container: categorized icon grid (Frontend, Backend, Cloud/DevOps) with hover animations |
-| Projects | Horizontal carousel with left/right arrows, swipe, optional autoplay |
-| Contact | "Get in Touch" panel: intro text, email, social icons; form with First Name, Last Name, Email*, Message, Send |
+| Section    | Key elements                                                                                                                                                                                                              |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Navigation | Sticky pill nav: HOME, ABOUT ME, SKILLS, PROJECTS, CONTACT; active link highlighted with a gray pill (wireframe yellow becomes gray); logo on the left                                                                    |
+| Hero       | Scrolling marquee ("actively seeking roles..."), intro headline + bio with highlighted words, buttons (View LinkedIn / GitHub / Resume), portrait on the right                                                            |
+| About Me   | Card grid: Experience (Offer Letter, Certificate, GitHub), Education (Webpage + 2 placeholder buttons), Pass-time (book covers), Publication (View Paper, Certificate, GitHub), several `?` placeholder cards, quote card |
+| Skills     | Large empty container: categorized icon grid (Frontend, Backend, Cloud/DevOps) with hover animations                                                                                                                      |
+| Projects   | Horizontal carousel with left/right arrows, swipe, optional autoplay                                                                                                                                                      |
+| Contact    | "Get in Touch" panel: intro text, email, social icons; form with First Name, Last Name, Email*, Message, Send                                                                                                             |
 
 ---
 
 ## Phases
 
 ### Phase 0: Project Setup and Repository
+
 **Goal:** A clean, running skeleton on GitHub.
+
 - [ ] Create GitHub repo; initialize local git
 - [ ] Scaffold Next.js + TypeScript + Tailwind (`create-next-app`)
 - [ ] Add ESLint/Prettier, `.gitignore`, `.env.example`
@@ -79,7 +82,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `chore: initial project setup`
 
 ### Phase 1: Design System and Layout Shell
+
 **Goal:** Global look and feel plus the page skeleton.
+
 - [ ] Tailwind theme: strictly black/white/gray tokens (see Visual Direction), no accent colors; fonts, radii, spacing
 - [ ] Utility class for the gray word-highlight effect (used only in hero and navbar)
 - [ ] Lint/check to make sure no non-gray color utilities slip in (e.g. restrict Tailwind palette to `black`, `white`, `neutral`)
@@ -91,7 +96,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: design tokens, base layout and shared components`
 
 ### Phase 2: Navigation Bar
+
 **Goal:** Sticky, working navigation.
+
 - [ ] Logo + pill-style nav links
 - [ ] Sticky positioning with subtle blur/shadow on scroll
 - [ ] Smooth scrolling to anchors (with offset for the sticky header)
@@ -101,7 +108,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: sticky navbar with scroll-spy`
 
 ### Phase 3: Hero Section
+
 **Goal:** The first impression.
+
 - [ ] Infinite marquee banner (CSS animation, pause on hover, `prefers-reduced-motion` respected)
 - [ ] Headline and bio with gray-highlighted keywords (the only content area with word highlights)
 - [ ] Buttons: LinkedIn, GitHub, Resume (open in new tab, `rel="noopener noreferrer"`)
@@ -111,7 +120,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: hero section with marquee`
 
 ### Phase 4: About Me Section
+
 **Goal:** The card grid.
+
 - [ ] Content stored in `data/about.ts` (easy to edit)
 - [ ] Experience card (role, company, dates, location, buttons)
 - [ ] Education card (college, degree, dates, buttons)
@@ -124,7 +135,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: about me card grid`
 
 ### Phase 5: Skills Section
+
 **Goal:** Categorized, animated skills.
+
 - [ ] Skills data in `data/skills.ts` grouped by category (Frontend, Backend, Databases, Cloud/DevOps, Tools)
 - [ ] Icon grid with labels; icons rendered in monochrome (black/gray), hover shifts gray shade
 - [ ] Hover animations (scale, color) and optional scroll-in fade
@@ -133,7 +146,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: skills section`
 
 ### Phase 6: Projects Carousel
+
 **Goal:** Browsable project showcase.
+
 - [ ] Project data in `data/projects.ts` (title, description, tech tags, image, live link, repo link)
 - [ ] Embla carousel with left/right arrow buttons
 - [ ] Touch-swipe and keyboard support
@@ -143,7 +158,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: projects carousel`
 
 ### Phase 7: Contact Section UI
+
 **Goal:** Contact layout and client-side form behavior.
+
 - [ ] Split layout: "Get in Touch" text, email link, social icons (left); form (right)
 - [ ] Fields: First Name, Last Name, Email*, Message
 - [ ] Client-side validation (valid email, non-empty message) with inline errors
@@ -153,7 +170,9 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: contact section UI and validation`
 
 ### Phase 8: Email Backend (API Route)
+
 **Goal:** Form submissions land in Gmail.
+
 - [ ] `app/api/contact/route.ts` with server-side validation
 - [ ] Nodemailer with Gmail SMTP using an App Password (2FA required)
 - [ ] Secrets in `.env.local` (`GMAIL_USER`, `GMAIL_APP_PASSWORD`, `CONTACT_TO`); never committed
@@ -164,6 +183,7 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `feat: contact API route with Nodemailer`
 
 ### Phase 9: Polish, Accessibility and SEO
+
 - [ ] Responsive QA (mobile, tablet, desktop)
 - [ ] Accessibility pass: contrast, focus states, alt text, aria labels, keyboard navigation
 - [ ] Metadata, Open Graph image, favicon, `sitemap`/`robots`
@@ -173,6 +193,7 @@ A single-page personal portfolio built from the provided wireframe: sticky nav, 
 **Commit:** `chore: polish, a11y and SEO`
 
 ### Phase 10: Deployment
+
 - [ ] Connect GitHub repo to Vercel
 - [ ] Add environment variables in Vercel dashboard
 - [ ] Verify production contact form
@@ -215,16 +236,16 @@ Open http://localhost:3000.
 
 ## Status
 
-| Phase | Status |
-|---|---|
-| 0. Setup | Not started |
+| Phase            | Status      |
+| ---------------- | ----------- |
+| 0. Setup         | Not started |
 | 1. Design system | Not started |
-| 2. Navbar | Not started |
-| 3. Hero | Not started |
-| 4. About Me | Not started |
-| 5. Skills | Not started |
-| 6. Projects | Not started |
-| 7. Contact UI | Not started |
+| 2. Navbar        | Not started |
+| 3. Hero          | Not started |
+| 4. About Me      | Not started |
+| 5. Skills        | Not started |
+| 6. Projects      | Not started |
+| 7. Contact UI    | Not started |
 | 8. Email backend | Not started |
-| 9. Polish | Not started |
-| 10. Deployment | Not started |
+| 9. Polish        | Not started |
+| 10. Deployment   | Not started |

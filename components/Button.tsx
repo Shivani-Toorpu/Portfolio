@@ -20,7 +20,10 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button className={`${base} ${variants[variant]} ${className}`} {...props} />
+    <button
+      className={`${base} ${variants[variant]} ${className}`}
+      {...props}
+    />
   );
 }
 
