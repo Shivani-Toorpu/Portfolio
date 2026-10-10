@@ -5,7 +5,7 @@ export default function Marquee({ text }: Props) {
 
   return (
     <div
-      className="marquee overflow-hidden border-y border-line py-2"
+      className="marquee border-line overflow-hidden border-y py-2"
       role="note"
       aria-label={text}
     >
@@ -15,9 +15,9 @@ export default function Marquee({ text }: Props) {
             {items.map((_, i) => (
               <span
                 key={i}
-                className="px-6 text-xs font-medium tracking-wide text-muted uppercase"
+                className="text-muted px-6 text-xs font-medium tracking-wide uppercase"
               >
-                {text} <span className="px-4 text-line">/</span>
+                {text} <span className="text-line px-4">/</span>
               </span>
             ))}
           </div>

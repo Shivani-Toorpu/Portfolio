@@ -3,7 +3,8 @@ export const hero = {
   location: 'Hyderabad, India',
   photo: '/images/profile.jpeg',
   photoAlt: 'Portrait of Shivani',
-  marquee: 'Actively seeking roles in Hyderabad. Contact for openings or referrals',
+  marquee:
+    'Actively seeking roles in Hyderabad. Contact for openings or referrals',
   // Words wrapped in [[double brackets]] get the gray highlight
   bio: [
     'I love building tools that are [[user-friendly]], [[simple]] and [[delightful]].',

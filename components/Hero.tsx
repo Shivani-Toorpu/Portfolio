@@ -28,12 +28,12 @@ export default function Hero() {
 
       <div className="mt-8 grid items-center gap-10 md:grid-cols-[1.2fr_1fr]">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+          <h1 className="text-ink text-3xl font-bold tracking-tight sm:text-4xl">
             Hello! I&apos;m {hero.name}, a <span className="hl">developer</span>{' '}
             based in {hero.location}.
           </h1>
 
-          <div className="mt-6 space-y-4 leading-relaxed text-body">
+          <div className="text-body mt-6 space-y-4 leading-relaxed">
             {hero.bio.map((paragraph) => (
               <p key={paragraph}>
                 <Highlighted text={paragraph} />
@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-card bg-surface md:max-w-none">
+        <div className="rounded-card bg-surface relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden md:max-w-none">
           <Image
             src={hero.photo}
             alt={hero.photoAlt}
