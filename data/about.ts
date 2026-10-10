@@ -71,5 +71,11 @@ export const about = {
   learning: ['[Topic or tool 1]', '[Topic or tool 2]', '[Topic or tool 3]'],
   languages: ['English', 'Telugu', 'Hindi'], // TODO: confirm these
   location: 'Hyderabad, India',
-  certifications: ['[Certification 1, year]', '[Certification 2, year]'],
+  certifications: [
+  'AWS Academy Graduate: Cloud Foundations',
+  'Oracle Cloud Infrastructure AI Foundations Associate',
+  'Salesforce Certified Agentforce Specialist',
+  'Foundational C# with Microsoft (freeCodeCamp)',
+  'HackerRank: Problem-Solving (Intermediate)',
+]
 };

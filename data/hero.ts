@@ -13,7 +13,7 @@ export const hero = {
   ],
   closing: "I'm currently looking for a new role as a developer.",
   links: {
-    linkedin: 'https://www.linkedin.com/in/your-handle',
+    linkedin: 'https://www.linkedin.com/in/shivani-toorpu',
     github: 'https://github.com/Shivani-Toorpu',
     resume: '/resume.pdf',
   },
