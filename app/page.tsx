@@ -1,9 +1,9 @@
+import About from '@/components/About';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const placeholders = [
-  { id: 'about', title: 'About Me' },
   { id: 'skills', title: 'Skills' },
   { id: 'projects', title: 'Projects' },
   { id: 'contact', title: 'Contact' },
@@ -16,6 +16,10 @@ export default function Home() {
       <main className="py-3">
         <SectionWrapper id="home">
           <Hero />
+        </SectionWrapper>
+
+        <SectionWrapper id="about">
+          <About />
         </SectionWrapper>
 
         {placeholders.map(({ id, title }) => (
